@@ -1,1 +1,11 @@
+title: kriswrightdev
+email: kris.al.wright@gmail.com
+description: A personal blog and portfolio for Kristoffer A. Wright.
+baseurl: '/blog'
+url: 'https://kawright.github.io'
+github_username: kawright
+permalink: /:collection/:year-:month-:day-:title:output_ext
+show_excerpts: true
 theme: jekyll-theme-minimal
+plugins:
+  - jekyll-feed
