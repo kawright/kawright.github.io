@@ -2,9 +2,6 @@
 layout: home
 title: Home
 ---
-Hey, I'm Kristoffer! Welcome to my blog!
-========================================
-
 Howdy, my name is Kristoffer A. Wright, and I am a software engineer who now
 has his own blog! I've got four years of professional experience as a DevOps
 engineer developing REST APIs and administering automated service integrations,
