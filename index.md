@@ -1,3 +1,7 @@
+---
+layout: home
+title: Home
+---
 Hey, I'm Kristoffer! Welcome to my blog!
 ========================================
 
