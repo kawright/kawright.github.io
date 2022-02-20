@@ -2,7 +2,11 @@
 title: wrench - API Reference
 ---
 
-# wrench - API Reference {#section-title}
+# wrench - API Reference (Version 0.1.0) {#section-title}
+
+Welcome to the API reference page for the *wrench* library.
+
+Please keep in mind that all *0.x.y* releases are subject to unannounced backwards-incompatible changes to the API. Use these pre-release builds at your own risk!
 
 ## Page Contents
 
@@ -18,6 +22,51 @@ title: wrench - API Reference
 - [wr_attach](#api-wr_attach)
 - [wr_enableplan](#api-wr_enableplan)
 - [wr_enableskip](#api-wr_enableskip)
+- [wr_enabletodo](#api-wr_enabletodo)
+- [wr_errtostr](#api-wr_errtostr)
+- [wr_getattach](#api-wr_getattach)
+- [wr_getattachct](#api-wr_getattachct)
+- [wr_getdesc](#api-wr_getdesc)
+- [wr_gettestno](#api-wr_gettestno)
+- [wr_newsuite](#api-wr_newsuite)
+- [wr_newtest](#api-wr_newtest)
+- [wr_regsetup](#api-wr_regsetup)
+- [wr_regteardown](#api-wr_teardown)
+- [wr_runsuite](#api-wr_runsuite)
+- [wr_setrem](#api-wr_setrem)
+- [wr_setsuiteprediags](#api-wr_setsuiteprediags)
+- [wr_setsuitepostdiags](#api-wr_setsuitepostdiags)
+- [wr_settestprediags](#api-wr_testprediags)
+- [wr_settestpostdiags](#api-wr_testpostdiags)
+
+### [Macros](#section-macros)
+
+- [wr_ASSERTEQ](#api-wr_ASSERTEQ)
+- [wr_ASSERTFALSE](#api-wr_ASSERTFALSE)
+- [wr_ASSERTGT](#api-wr_ASSERTGT)
+- [wr_ASSERTGTEQ](#api-wr_ASSERTGTEQ)
+- [wr_ASSERTLT](#api-wr_ASSERTLT)
+- [wr_ASSERTLTEQ](#api-wr_ASSERTLTEQ)
+- [wr_ASSERTNEQ](#api-wr_ASSERTNEQ)
+- [wr_ASSERTNOTNULL](#api-wr_ASSERTNOTNULL)
+- [wr_ASSERTNULL](#api-wr_ASSERTNULL)
+- [wr_ASSERTSTREQ](#api-wr_ASSERTSTREQ)
+- [wr_ASSERTSTRGT](#api-wr_ASSERTSTRGT)
+- [wr_ASSERTSTRGTEQ](#api-wr_ASSERTSTRGTEQ)
+- [wr_ASSERTSTRLT](#api-wr_ASSERTSTRLT)
+- [wr_ASSERTSTRLTEQ](#api-wr_ASSERTSTRLTEQ)
+- [wr_ASSERTSTRNEQ](#api-wr_ASSERTSTRNEQ)
+- [wr_ASSERTTRUE](#api-wr_ASSERTTRUE)
+- [wr_BAILOUT](#api-wr_BAILOUT)
+- [wr_SKIP](#api-wr_SKIP)
+- [wr_TODO](#api-wr_TODO)
+
+### [Types](#section-types)
+
+- [wr_Callback](#api-wr_Callback)
+- [wr_Suite](#api-wr_Suite)
+- [wr_Test](#api-wr_Test)
+- [wr_TestContext](#api-wr_TestContext)
 
 ---
 
