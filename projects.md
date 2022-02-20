@@ -1,10 +1,10 @@
 ---
-title: /projects
+title: /my_projects
 ---
 
 Projects
 ========
 
-This page contains a list of all of my major personal projects.
+This page contains a list of links to the project pages for each one of my major projects. There, you can find documentation, changelogs, todos, licenses, tutorials, and other helpful information for each project.
 
 - [**wrench**](/wrench/home) A simple unit testing framework for C.
