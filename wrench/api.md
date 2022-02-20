@@ -287,3 +287,20 @@ Pointer to the return data.
 The attachment was successfully fetched.
 
 ---
+
+### [wr_ErrorCode](#api-wr_ErrorCode) wr_getattachct([wr_TestContext](#api-wr_TestContext) instance, int \*ret) {#api-wr_getattachct}
+
+Fetch the number of attachments that have been added to a given test context.
+
+#### PARAMETERS
+
+##### *instance*
+The test context from which the attachment count is being fetched.
+
+##### *ret*
+Pointer to the return data.
+
+#### RETURN VALUES
+
+##### [wr_ERROK](#api-wr_ERROK)
+The attachment count was successfully fetched.
