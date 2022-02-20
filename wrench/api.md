@@ -240,7 +240,7 @@ The given test context’s directive attribute was successfully updated.
 
 ---
 
-### [wr_ErrorCode](#api-wr_ErrorCode) wr_errtostr([wr_ErrorCode](#api-wr_ErrorCode) code, char \*\*ret) {#api-wr_errtostr}
+### [wr_ErrorCode](#api-wr_ErrorCode) *wr_errtostr*([wr_ErrorCode](#api-wr_ErrorCode) code, char \*\*ret) {#api-wr_errtostr}
 
 Convert an error code into a string which describes the meaning of the code.
 
@@ -264,7 +264,7 @@ An error occurred while attempting to allocate memory for the return data.
 
 ---
 
-### [wr_ErrorCode](#api-wr_ErrorCode) wr_getattach([wr_TestContext](#api-TestContext) instance, int index, void \*\*ret) {#api-getattach}
+### [wr_ErrorCode](#api-wr_ErrorCode) *wr_getattach*([wr_TestContext](#api-TestContext) instance, int index, void \*\*ret) {#api-getattach}
 
 Fetch an attachment from a given test context.
 
@@ -288,7 +288,7 @@ The attachment was successfully fetched.
 
 ---
 
-### [wr_ErrorCode](#api-wr_ErrorCode) wr_getattachct([wr_TestContext](#api-wr_TestContext) instance, int \*ret) {#api-wr_getattachct}
+### [wr_ErrorCode](#api-wr_ErrorCode) *wr_getattachct*([wr_TestContext](#api-wr_TestContext) instance, int \*ret) {#api-wr_getattachct}
 
 Fetch the number of attachments that have been added to a given test context.
 
@@ -307,7 +307,7 @@ The attachment count was successfully fetched.
 
 ---
 
-### [wr_ErrorCode](#api-wr_ErrorCode) wr_getdesc([wr_TestContext](#api-wr_TestContext) instance, char \*\*ret) {#api-wr_getdesc}
+### [wr_ErrorCode](#api-wr_ErrorCode) *wr_getdesc*([wr_TestContext](#api-wr_TestContext) instance, char \*\*ret) {#api-wr_getdesc}
 
 Fetch the description from a given test context.
 
@@ -326,7 +326,7 @@ The description was successfully fetched.
 
 ---
 
-### [wr_ErrorCode](#api-wr_ErrorCode) wr_gettestno([wr_TestContext](#api-wr_TestContext) instance, int \*ret)
+### [wr_ErrorCode](#api-wr_ErrorCode) *wr_gettestno*([wr_TestContext](#api-wr_TestContext) instance, int \*ret)
 
 Fetch the test number from a given test context.
 
@@ -347,7 +347,7 @@ The test number was successfully fetched.
 
 ---
 
-### [wr_ErrorCode](#api-wr_ErrorCode) wr_newsuite([wr_Test](#api-wr_Test) \*roster, int count, char \*outfile, [wr_Suite](#api-wr_Suite) \*ret) {#api-wr_newsuite}
+### [wr_ErrorCode](#api-wr_ErrorCode) *wr_newsuite*([wr_Test](#api-wr_Test) \*roster, int count, char \*outfile, [wr_Suite](#api-wr_Suite) \*ret) {#api-wr_newsuite}
 
 Create a new test suite.
 
@@ -378,7 +378,7 @@ An error occurred while attempting to allocate memory for the return data.
 
 ---
 
-### [wr_ErrorCode](#api-wr_ErrorCode) wr_newtest([wr_Callback](#api-wr_Callback) callback, char \*desc, [wr_Test](#api-wr_Test) \*ret) {#api-wr_ErrorCode}
+### [wr_ErrorCode](#api-wr_ErrorCode) *wr_newtest*([wr_Callback](#api-wr_Callback) callback, char \*desc, [wr_Test](#api-wr_Test) \*ret) {#api-wr_ErrorCode}
 
 Create a new test.
 
@@ -403,7 +403,7 @@ An error occurred while attempting to allocate memory for the return data.
 
 ---
 
-### [wr_ErrorCode](#api-wr_ErrorCode) wr_regsetup([wr_Suite](#api-wr_Suite) instance, [wr_Callback](*api-wr_Callback) callback) {#api-wr_regsetup}
+### [wr_ErrorCode](#api-wr_ErrorCode) *wr_regsetup*([wr_Suite](#api-wr_Suite) instance, [wr_Callback](*api-wr_Callback) callback) {#api-wr_regsetup}
 
 Register a callback function to be used as the setup function for a given suite.
 
@@ -422,7 +422,7 @@ The setup function was successfully registered.
 
 ---
 
-### [wr_ErrorCode](#api-wr_ErrorCode) wr_regteardown([wr_Suite](#api-wr_Suite) instance, [wr_Callback](#api-wr_Callback) callback) {#api-wr_regteardown}
+### [wr_ErrorCode](#api-wr_ErrorCode) *wr_regteardown*([wr_Suite](#api-wr_Suite) instance, [wr_Callback](#api-wr_Callback) callback) {#api-wr_regteardown}
 
 Register a callback function to be used as the teardown function for a given suite.
 
@@ -441,7 +441,7 @@ The teardown function was successfully registered.
 
 ---
 
-### [wr_ErrorCode](#api-wr_ErrorCode) wr_runsuite([wr_Suite](#api-wr_Suite) instance, [wr_SuiteResult](#api-wr_SuiteResult) \*ret) {#api-wr_runsuite}
+### [wr_ErrorCode](#api-wr_ErrorCode) *wr_runsuite*([wr_Suite](#api-wr_Suite) instance, [wr_SuiteResult](#api-wr_SuiteResult) \*ret) {#api-wr_runsuite}
 
 Run a test suite.
 
@@ -466,7 +466,7 @@ An error occurred while attempting to allocate memory for a test context.
 
 ---
 
-### [wr_ErrorCode](#api-wr_ErrorCode) wr_setrem([wr_TestContext](#api-wr_TestContext) instance, char \*rem) {#api-wr_setrem}
+### [wr_ErrorCode](#api-wr_ErrorCode) *wr_setrem*([wr_TestContext](#api-wr_TestContext) instance, char \*rem) {#api-wr_setrem}
 
 Add a remark to a given test context.
 
@@ -492,7 +492,7 @@ An error occurred while attempting to allocate memory for the remark.
 
 ---
 
-### [wr_ErrorCode](#api-wr_ErrorCode) wr_setsuiteprediags([wr_Suite](#api-wr_Suite) instance, char \*dirs) {#api-wr_setsuiteprediags}
+### [wr_ErrorCode](#api-wr_ErrorCode) *wr_setsuiteprediags*([wr_Suite](#api-wr_Suite) instance, char \*dirs) {#api-wr_setsuiteprediags}
 
 Assign a string to be used as prefix diagnostics for a given suite.
 
@@ -518,7 +518,7 @@ An error occurred while attempting to allocate memory for the diagnostics.
 
 ---
 
-### [wr_ErrorCode](#api-wr_ErrorCode) wr_setsuitepostdiags([wr_Suite](#api-wr_Suite) instance, char \*dirs) {#api-wr_setsuitepostdiags}
+### [wr_ErrorCode](#api-wr_ErrorCode) *wr_setsuitepostdiags*([wr_Suite](#api-wr_Suite) instance, char \*dirs) {#api-wr_setsuitepostdiags}
 
 Assign a string to be used as suffix diagnostics for a given suite.
 
@@ -544,7 +544,7 @@ An error occurred while attempting to allocate memory for the diagnostics.
 
 ---
 
-### [wr_ErrorCode](#api-wr_ErrorCode) wr_settestprediags([wr_TestContext](#api-wr_TestContext) instance, char \*dirs) {#api-wr_settestprediags}
+### [wr_ErrorCode](#api-wr_ErrorCode) *wr_settestprediags*([wr_TestContext](#api-wr_TestContext) instance, char \*dirs) {#api-wr_settestprediags}
 
 Assign a string to be used as prefix diagnostics for a given test context.
 
@@ -570,7 +570,7 @@ An error occurred while attempting to allocate memory for the diagnostics.
 
 ---
 
-### [wr_ErrorCode](#api-wr_ErrorCode) wr_settestpostdiags([wr_TestContext](#api-wr_TestContext) instance, char \*dirs) {#api-wr_settestprediags}
+### [wr_ErrorCode](#api-wr_ErrorCode) *wr_settestpostdiags*([wr_TestContext](#api-wr_TestContext) instance, char \*dirs) {#api-wr_settestprediags}
 
 Assign a string to be used as suffix diagnostics for a given test context.
 
@@ -593,3 +593,137 @@ The suffix diagnostics were successfully assigned.
 
 ##### [wr_ERROK](#api-wr_ERRMEM)
 An error occurred while attempting to allocate memory for the diagnostics.
+
+---
+
+## Macros {#section-macros}
+
+---
+
+### *wr_ASSERT*(a, b) {#api-wr_ASSERT}
+
+Assert that two numeric values, *a* and *b* are equal. If the assertion fails, the test will immediately return with [wr_RETNOK](#api-wr_RETNOK).
+
+For an equivalent assertion for strings, please see [wr_ASSERTSTREQ](#api-wr_ASSERTSTREQ).
+
+---
+
+### *wr_ASSERTFALSE*(expr) {#api-wr_ASSERTFALSE}
+
+Assert that a given expression *expr* is false (that is, *expr == 0*). If the assertion fails, the test will immediately return with [wr_RETNOK](#api-wr_RETNOK).
+
+---
+
+### *wr_ASSERTGT*(a, b) {#api-wr_ASSERTGT}
+
+Assert that the given numeric value *a* is greater-than the given numeric value *b*. If the assertion fails, the test will immediately return with [wr_RETNOK](#api-wr_RETNOK).
+
+For an equivalent assertion for strings, please see [wr_ASSERTSTRGT](#api-wr_ASSERTSTRGT).
+
+---
+
+### *wr_ASSERTGTEQ*(a, b) {#api-wr_ASSERTGTEQ}
+
+Assert that the given numeric value *a* is greater-than-or-lqual-to the given numeric value *b*. If the assertion fails, the test will immediately return with [wr_RETNOK](#api-wr_RETNOK).
+
+For an equivalent assertion for strings, please see [wr_ASSERTSTRGTEQ](#api-wr_ASSERTSTRGTEQ).
+
+---
+
+### *wr_ASSERTLT*(a, b) {#api-wr_ASSERTLT}
+
+Assert that the given numeric value *a* is less-than the given numeric value *b*. If the assertion fails, the test will immediately return with [wr_RETNOK](#api-wr_RETNOK).
+
+For an equivalent assertion for strings, please see [wr_ASSERTSTRLT](#api-wr_ASSERTSTRLT).
+
+---
+
+### *wr_ASSERTLTEQ*(a, b) {#api-wr_ASSERTLTEQ}
+
+Assert that the given numeric value *a* is less-than-or-equal-to the given numeric value *b*. If the assertion fails, the test will immediately return with [wr_RETNOK](#api-wr_RETNOK).
+
+For an equivalent assertion for strings, please see [wr_ASSERTSTRLTEQ](#api-wr_ASSERTSTRLTEQ).
+
+---
+
+### *wr_ASSERTNEQ*(a, b) {#api-wr_ASSERTNEQ}
+
+Assert that the given numeric value *a* is not equal to the given numeric value *b*. If the assertion fails, the test will immediately return with [wr_RETNOK](#api-wr_RETNOK).
+
+For an equivalent assertion for strings, please see [wr_ASSERTSTRNEQ](#api-wr_ASSERTSTRNEQ)
+
+---
+
+### *wr_ASSERTNOTNULL*(ptr) {#api-wr_ASSERTNOTNULL}
+
+Assert that the given pointer *ptr* is not *NULL*. If the assertion fails, the test will immediately return with [wr_RETNOK](#api-wr_RETNOK).
+
+---
+
+### *wr_ASSERTNULL*(ptr) {#api-wr_ASSERTNULL}
+
+Assert that the given pointer *ptr* is *NULL*. If the assertion fails, the test will immediately return with [wr_RETNOK](#api-wr_RETNOK).
+
+---
+
+### *wr_ASSERTSTREQ*(a, b) {#api-wr_ASSERTSTREQ}
+
+Assert that the given string *a* (i.e. *char \*a*) is equal to the given string *b*. If the assertion fails, the test will immediately return with [wr_RETNOK](#api-wr_RETNOK).
+
+---
+
+### *wr_ASSERTSTRGT*(a, b) {#api-wr_ASSERTSTRGT}
+
+Assert that the first different character between two given strings *a* (i.e. *char \*a*) and *b* is greater in *a* than in *b*. If the assertion fails, the test will immediately return with [wr_RETNOK](#api-wr_RETNOK).
+
+---
+
+### *wr_ASSERTSTRGTEQ*(a, b) {#api-wr_ASSERTSTRGTEQ}
+
+Assert that either the two given strings *a* (i.e. *char \*a*) and *b* are equal, or that the first different character between the two is greater in *a* than in *b*. If the assertion fails, the test will immediately return with [wr_RETNOK](#api-wr_RETNOK).
+
+---
+
+### *wr_ASSERTSTRLT*(a, b) {#api-wr_ASSERTSTRLT}
+
+Assert that the first different character between two given strings *a* (i.e. *char \*a*) and *b* is less in *a* than in *b*. If the assertion fails, the test will immediately return with [wr_RETNOK](#api-wr_RETNOK).
+
+---
+
+### *wr_ASSERTSTRLTEQ*(a, b) {#api-wr_ASSERTSTRLTEQ}
+
+Assert that either the two given strings *a* (i.e. *char \*a*) and *b* are equal, or that the first different character netween the two is less in *a* than in *b*. If the assertion fails, the test will immediately return with [wr_RETNOK](#api-wr_RETNOK).
+
+---
+
+### *wr_ASSERTSTRNEQ*(a, b) {#api-wr_ASSERTSTRNEQ}
+
+Assert that the given string *a (i.e. *char \*a*) is not equal to the given string *b*. If the assertion fails, the test will immediately return with [wr_RETNOK](#api-wr_RETNOK).
+
+---
+
+### *wr_ASSERTTRUE*(expr) {#api-wr_ASSERTTRUE}
+
+Assert that the given expression *expr* is true (that is, *expr != 0*). If the assertion fails, the current test will immediately return with [wr_RETNOK](#api-wr_RETNOK).
+
+---
+
+### *wr_BAILOUT* {#api-wr_BAILOUT}
+
+Bail out of the entire test suite. Causes the current test to immediately return with with [wr_RETBAIL](#api-wr_RETBAIL).
+
+---
+
+### *wr_SKIP* {#api-wr_SKIP}
+
+Skip this test. Causes the test context’s directive to be set to [wr_DIRSKIP](#api-wr_DIRKIP) and immediately returns with [wr_RETOK](#api-wr_RETOK).
+
+---
+
+### *wr_TODO* {#api-wr_TODO}
+
+Mark this test as a *TODO* item. Causes the test context’s directive attribute to be set to [wr_DIRTODO](#api-wr_DIRTODO).
+
+This macro is an alias of the [wr_enabletodo](#api-wr_enabletodo) function, and is provided as a conventience so that the API looks consistent.
+
+---
