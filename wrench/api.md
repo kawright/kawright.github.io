@@ -304,3 +304,292 @@ Pointer to the return data.
 
 ##### [wr_ERROK](#api-wr_ERROK)
 The attachment count was successfully fetched.
+
+---
+
+### [wr_ErrorCode](#api-wr_ErrorCode) wr_getdesc([wr_TestContext](#api-wr_TestContext) instance, char \*\*ret) {#api-wr_getdesc}
+
+Fetch the description from a given test context.
+
+#### PARAMETERS
+
+##### *instance*
+The test context from which the description is being fetched.
+
+##### *ret*
+Pointer to the return data.
+
+#### RETURN VALUES
+
+##### [wr_ERROK](#api-wr_ERROK)
+The description was successfully fetched.
+
+---
+
+### [wr_ErrorCode](#api-wr_ErrorCode) wr_gettestno([wr_TestContext](#api-wr_TestContext) instance, int \*ret)
+
+Fetch the test number from a given test context.
+
+> NOTE: Test numbers are one-indexed, not zero-indexed. This is so that the first test that is written to output is test 'one'.
+
+#### PARAMETERS
+
+##### *instance*
+The test context from which the test number is being fetched.
+
+##### *ret*
+Pointer to the return data.
+
+#### RETURN VALUES
+
+##### [wr_ERROK](#api-wr_ERROK)
+The test number was successfully fetched.
+
+---
+
+### [wr_ErrorCode](#api-wr_ErrorCode) wr_newsuite([wr_Test](#api-wr_Test) \*roster, int count, char \*outfile, [wr_Suite](#api-wr_Suite) \*ret) {#api-wr_newsuite}
+
+Create a new test suite.
+
+#### PARAMETERS
+
+##### *roster*
+Pointer to the first element in an array of [wr_Test](#api-wr_Test). This array comprises the roster of individual tests which will be run when the new suite is run.
+
+##### *count*
+The number of tests from *roster* which will be run.
+
+##### *outfile*
+The path to the file where the new suite’s output will be written to.
+
+##### *ret*
+Pointer to the return data, which is the new suite.
+
+#### RETURN VALUES
+
+##### [wr_ERROK](#api-wr_ERROK)
+The new suite was successfully created and returned.
+
+##### [wr_ERRMEM](#api-wr_ERRMEM)
+An error occurred while attempting to allocate memory for the return data.
+
+##### [wr_ERREMPTY](#api-wr_ERREMPTY)
+*count* is less than *1*.
+
+---
+
+### [wr_ErrorCode](#api-wr_ErrorCode) wr_newtest([wr_Callback](#api-wr_Callback) callback, char \*desc, [wr_Test](#api-wr_Test) \*ret) {#api-wr_ErrorCode}
+
+Create a new test.
+
+#### PARAMETERS
+
+##### *callback*
+The function containing this test’s implementation.
+
+##### *desc*
+A description of the test. This is the description that will be used for the suite’s output.
+
+##### *ret*
+Pointer to the return data, which is the new test.
+
+#### RETURN VALUES
+
+##### [wr_ERROK](#api-wr_ERROK)
+The new test was successfully created and returned.
+
+##### [wr_ERRMEM](#api-wr_ERRMEM)
+An error occurred while attempting to allocate memory for the return data.
+
+---
+
+### [wr_ErrorCode](#api-wr_ErrorCode) wr_regsetup([wr_Suite](#api-wr_Suite) instance, [wr_Callback](*api-wr_Callback) callback) {#api-wr_regsetup}
+
+Register a callback function to be used as the setup function for a given suite.
+
+#### PARAMETERS
+
+##### *instance*
+The suite for which the setup function is being registered.
+
+##### *callback*
+The function which will be used as the setup function.
+
+#### RETURN VALUES
+
+##### [wr_ERROK](#api-wr_ERROK)
+The setup function was successfully registered.
+
+---
+
+### [wr_ErrorCode](#api-wr_ErrorCode) wr_regteardown([wr_Suite](#api-wr_Suite) instance, [wr_Callback](#api-wr_Callback) callback) {#api-wr_regteardown}
+
+Register a callback function to be used as the teardown function for a given suite.
+
+#### PARAMETERS
+
+##### *instance*
+The suite for which the teardown function is being registered.
+
+##### *callback*
+The function which will be used as the teardown function.
+
+#### RETURN VALUES
+
+##### [wr_ERROK](#api-wr_ERROK)
+The teardown function was successfully registered.
+
+---
+
+### [wr_ErrorCode](#api-wr_ErrorCode) wr_runsuite([wr_Suite](#api-wr_Suite) instance, [wr_SuiteResult](#api-wr_SuiteResult) \*ret) {#api-wr_runsuite}
+
+Run a test suite.
+
+#### PARAMETERS
+
+##### *instance*
+The suite which is to be run.
+
+##### *ret*
+Pointer to the return data, which is a [wr_SuiteResult](#api-wr_SuiteResult) that indicates the status of the suite run as of its completion.
+
+#### RETURN VALUES
+
+##### [wr_ERROK](#api-wr_ERROK)
+The test was successfully run. Please keep in mind that receiving this error code does not imply any particular result from running the suite–-to determine if the suite passed or failed, you must examine the value written to *ret*.
+
+##### [wr_ERRIO](#api-wr_ERRIO)
+An error occurred while attempting to open the suite’s output file with write access.
+
+##### [wr_ERRMEM](#api-wr_ERRMEM)
+An error occurred while attempting to allocate memory for a test context.
+
+---
+
+### [wr_ErrorCode](#api-wr_ErrorCode) wr_setrem([wr_TestContext](#api-wr_TestContext) instance, char \*rem) {#api-wr_setrem}
+
+Add a remark to a given test context.
+
+For tests with a directive, the remark will be the explainatory text which follows the directive. For tests without a directive, the remark will appear within a parenthentical directly after the test’s description.
+
+> WARNING: This function will not *free* the test’s existing remark if it has already been assigned. Thus, it is only safe to call this function **once** per test context.
+
+#### PARAMETERS
+
+##### *instance*
+The test in which the remark will be assigned.
+
+##### *rem*
+The string which will be assigned as the test’s remark.
+
+#### RETURN VALUES
+
+##### [wr_ERROK](#api-wr_ERROK)
+The remark was successfully added.
+
+##### [wr_ERRMEM](#api-wr_ERRMEM)
+An error occurred while attempting to allocate memory for the remark.
+
+---
+
+### [wr_ErrorCode](#api-wr_ErrorCode) wr_setsuiteprediags([wr_Suite](#api-wr_Suite) instance, char \*dirs) {#api-wr_setsuiteprediags}
+
+Assign a string to be used as prefix diagnostics for a given suite.
+
+The prefix diagnostics are written to the output before the results of any tests are written. The given string will be split into separate diagnostics at each occurrence of the newline '\\n' character.
+
+> WARNING: This function will not *free* the suite’s existing prefix diagnostics if they have already been assigned. Thus, it is only safe to call this function **once** per suite.
+
+#### PARAMETERS
+
+##### *instance*
+The suite in which the prefix diagnostics will be assigned.
+
+##### *dirs*
+The string which will be assigned as the given suite’s prefix diagnostics.
+
+#### RETURN VALUES
+
+##### [wr_ERROK](#api-wr_ERROK)
+The prefix diagnostics were successfully assigned.
+
+##### [wr_ERROK](#api-wr_ERRMEM)
+An error occurred while attempting to allocate memory for the diagnostics.
+
+---
+
+### [wr_ErrorCode](#api-wr_ErrorCode) wr_setsuitepostdiags([wr_Suite](#api-wr_Suite) instance, char \*dirs) {#api-wr_setsuitepostdiags}
+
+Assign a string to be used as suffix diagnostics for a given suite.
+
+The suffix diagnostics are written to the output after the results of any tests are written. The given string will be split into separate diagnostics at each occurrence of the newline '\\n' character.
+
+> WARNING: This function will not *free* the suite’s existing suffix diagnostics if they have already been assigned. Thus, it is only safe to call this function **once** per suite.
+
+#### PARAMETERS
+
+##### *instance*
+The suite in which the suffix diagnostics will be assigned.
+
+##### *dirs*
+The string which will be assigned as the given suite’s suffix diagnostics.
+
+#### RETURN VALUES
+
+##### [wr_ERROK](#api-wr_ERROK)
+The suffix diagnostics were successfully assigned.
+
+##### [wr_ERROK](#api-wr_ERRMEM)
+An error occurred while attempting to allocate memory for the diagnostics.
+
+---
+
+### [wr_ErrorCode](#api-wr_ErrorCode) wr_settestprediags([wr_TestContext](#api-wr_TestContext) instance, char \*dirs) {#api-wr_settestprediags}
+
+Assign a string to be used as prefix diagnostics for a given test context.
+
+The prefix diagnostics are written to the output before the test results are written. The given string will be split into separate diagnostics at each occurrence of the newline '\\n' character.
+
+> WARNING: This function will not *free* the test context’s existing prefix diagnostics if they have already been assigned. Thus, it is only safe to call this function **once** per test context.
+
+#### PARAMETERS
+
+##### *instance*
+The test context for which the prefix diagnostics will be assigned.
+
+##### *dirs*
+The string which will be assigned as the given test context’s prefix diagnostics.
+
+#### RETURN VALUES
+
+##### [wr_ERROK](#api-wr_ERROK)
+The prefix diagnostics were successfully assigned.
+
+##### [wr_ERROK](#api-wr_ERRMEM)
+An error occurred while attempting to allocate memory for the diagnostics.
+
+---
+
+### [wr_ErrorCode](#api-wr_ErrorCode) wr_settestpostdiags([wr_TestContext](#api-wr_TestContext) instance, char \*dirs) {#api-wr_settestprediags}
+
+Assign a string to be used as suffix diagnostics for a given test context.
+
+The suffix diagnostics are written to the output after the test results are written. The given string will be split into separate diagnostics at each occurrence of the newline '\\n' character.
+
+> WARNING: This function will not *free* the test context’s existing suffix diagnostics if they have already been assigned. Thus, it is only safe to call this function **once** per test context.
+
+#### PARAMETERS
+
+##### *instance*
+The test context for which the suffix diagnostics will be assigned.
+
+##### *dirs*
+The string which will be assigned as the given test context’s suffix diagnostics.
+
+#### RETURN VALUES
+
+##### [wr_ERROK](#api-wr_ERROK)
+The suffix diagnostics were successfully assigned.
+
+##### [wr_ERROK](#api-wr_ERRMEM)
+An error occurred while attempting to allocate memory for the diagnostics.
