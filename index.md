@@ -1,6 +1,6 @@
 ---
 layout: home
-title: [kriswrightdev.com]
+title: /kriswrightdev.com
 ---
 Howdy, my name is Kristoffer A. Wright, and I am a software engineer who now
 has his own blog! I've got four years of professional experience as a DevOps

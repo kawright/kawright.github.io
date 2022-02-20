@@ -727,3 +727,29 @@ Mark this test as a *TODO* item. Causes the test context’s directive attribute
 This macro is an alias of the [wr_enabletodo](#api-wr_enabletodo) function, and is provided as a conventience so that the API looks consistent.
 
 ---
+
+## Types {#section-types}
+
+---
+
+### typedef [wr_CallbackReturn](#api-wr_CallbackReturn) (*\*wr_Callback*)([wr_TestContext](#api-wr_TestContext) context) {#api-wr_Callback}
+
+A function pointer for a callback function which may be used as either a single test implementation, a setup function, or a teardown function.
+
+---
+
+### typedef struct wr_Suite *\*wr_Suite* {#api-wr_Suite}
+
+An opaque handle to an object which stores the attributes of an entire test suite.
+
+---
+
+### typedef struct wr_Test *\*wr_Test* {#api-wr_Test}
+
+An opaque handle to an object which stores the attributes of a given test.
+
+---
+
+### typedef struct wr_TestContext *\*wr_TestContext* {#api-wr_TestContext}
+
+An opaque handle to an object which stores the state of a given test.
