@@ -4,6 +4,17 @@ title: wrench - API Reference
 
 # wrench - API Reference {#section-title}
 
+## Contents
+
+- [Enums](#section-enums)
+    - [wr_CallbackReturn](#api-wr_CallbackReturn)
+    - [wr_Directive](#api-wr_Directive)
+    - [wr_ErrorCode](#api-wr_ErrorCode)
+    - [wr_SuiteResult](#api-wr_SuiteResult)
+- [Functions](#section-functions)
+    - [wr_attach](#api-wr_attach)
+    - [wr_enableplan](#api-wr_enableplan)
+
 ---
 
 ## Enums {#section-enums}
@@ -102,7 +113,7 @@ The suite was bailed out of before it could complete.
 
 ---
 
-### wr_ErrorCode *wr_attach*([wr_TestContext](#api-wr_TestContext) instance, void \*obj) {#api-wr_ErrorCode}
+### wr_ErrorCode *wr_attach*([wr_TestContext](#api-wr_TestContext) instance, void \*obj) {#api-wr_attach}
 
 Add a single attachment to a test context. This allows the user to able to pass any arbitrary data between the setup function, the test implementation, and the teardown function, allowing a continuous state to be maintained throughout the test fixture.
 
@@ -123,3 +134,17 @@ The attachment was successfully added to the given context.
 An error occurred while attempting to allocate/reallocate memory for the attachment.
 
 ---
+
+### wr_ErrorCode *wr_enableplan*([wr_Suite](#api-wr_Suite) instance) {#api-wr_enableplan}
+
+Calling this function will have the effect of causing the plan for the given suite to be written to output when it is run. Plans are always written before the first test result.
+
+#### Parameters
+
+##### *instance*
+The suite for which plan output will be enabled.
+
+#### Return Values
+
+##### [wr_ERROK](#api-wr_ERROK)
+Plan print was successfully enabled for the given suite.
