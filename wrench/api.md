@@ -4,16 +4,19 @@ title: wrench - API Reference
 
 # wrench - API Reference {#section-title}
 
-## Contents
+## Page Contents
 
-- [Enums](#section-enums)
-    - [wr_CallbackReturn](#api-wr_CallbackReturn)
-    - [wr_Directive](#api-wr_Directive)
-    - [wr_ErrorCode](#api-wr_ErrorCode)
-    - [wr_SuiteResult](#api-wr_SuiteResult)
-- [Functions](#section-functions)
-    - [wr_attach](#api-wr_attach)
-    - [wr_enableplan](#api-wr_enableplan)
+### [Enums](#section-enums)
+
+- [wr_CallbackReturn](#api-wr_CallbackReturn)
+- [wr_Directive](#api-wr_Directive)
+- [wr_ErrorCode](#api-wr_ErrorCode)
+- [wr_SuiteResult](#api-wr_SuiteResult)
+
+### [Functions](#section-functions)
+
+- [wr_attach](#api-wr_attach)
+- [wr_enableplan](#api-wr_enableplan)
 
 ---
 
@@ -148,3 +151,6 @@ The suite for which plan output will be enabled.
 
 ##### [wr_ERROK](#api-wr_ERROK)
 Plan print was successfully enabled for the given suite.
+
+---
+
