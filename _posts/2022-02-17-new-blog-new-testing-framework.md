@@ -30,11 +30,9 @@ will be posting about soon), and I was trying to figure out what framework
 I would use for unit testing. After much research, I came to the following
 conclusions:
 
-    1.  Most of what is available out there is way too bloated for what I
-        needed.
+    1.  Most of what is available out there is way too bloated for what I needed.
     2.  I surely cannot be the only developer who feels this way.
-    3.  It would be fun to take a small diversion from my current project to
-        work on rolling my own unit testing framework.
+    3.  It would be fun to take a small diversion from my current project to work on rolling my own unit testing framework.
 
 Thus, my latest project `wrench` was born. `wrench` is an easy-to-use unit
 testing framework which has a simple API and supports TAP (Test Anything 
