@@ -600,7 +600,7 @@ An error occurred while attempting to allocate memory for the diagnostics.
 
 ---
 
-### *wr_ASSERT*(a, b) {#api-wr_ASSERT}
+### *wr_ASSERTEQ*(a, b) {#api-wr_ASSERTEQ}
 
 Assert that two numeric values, *a* and *b* are equal. If the assertion fails, the test will immediately return with [wr_RETNOK](#api-wr_RETNOK).
 
