@@ -20,3 +20,6 @@ Page Contents
 -------------
 
 - [API Reference](api)
+- [Changelog](changelog)
+- [TODO](todo)
+- [License](license)
