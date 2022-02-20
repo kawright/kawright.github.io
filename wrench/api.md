@@ -221,3 +221,11 @@ The test context for which the directive attribute will be updated.
 The given test context’s directive attribute was successfully updated.
 
 ---
+
+### [wr_ErrorCode](#api-wr_ErrorCode) *wr_enabletodo*([wr_TestContext](#api-wr_TestContext) instance) {#api-wr_enabletodo}
+
+Set the directive attribute for the given test context to [wr_DIRTODO](#api-wr_DIRTODO).
+
+The preferred method of changing the directive attribute of a given test context is not to call this method directly, but rather to use the [wr_TODO](#api-wr_TODO) macro instead.
+
+---
