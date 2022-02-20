@@ -78,7 +78,7 @@ Please keep in mind that all *0.x.y* releases are subject to unannounced backwar
 
 This enum contains all values that may be returned by a *wrench* callback function.
 
-#### Enumerators
+#### ENUMERATORS
 
 ##### *wr_RETOK* {#api-wr_RETOK}
 Indicates that the given test callback passed. Should only be returned by test callbacks.
@@ -110,7 +110,7 @@ Indicates that the given teardown function did not complete successfully. Should
 
 This enum contains all of the values used to indicate which (if any) directives should be applied to the output of a given test.
 
-#### Enumerators
+#### ENUMERATORS
 
 ##### *wr_DIRNONE* {#api-wr_DIRNONE}
 No directives will be applied to the output of the given test.
@@ -127,7 +127,7 @@ The SKIP directive will be applied to the output of the given test.
 
 This enum contains all values which may be returned by a function in the wrench API. These values indicate either the succes of the function returning them, or what type of error occurred during the function’s execution.
 
-#### Enumerators
+#### ENUMERATORS
 
 ##### *wr_ERROK* {#api-wr_ERROK}
 The function complted execution successfully. No error occurred.
@@ -147,7 +147,7 @@ An attempt to run an empty suite was made.
 
 This enum contains values which indicate the status of an entire test suite after its completion.
 
-#### Enumerators
+#### ENUMERATORS
 
 ##### *wr_SRESOK* {#api-wr_SRESOK}
 All tests in the suite either passed, or were skipped.
@@ -170,7 +170,7 @@ The suite was bailed out of before it could complete.
 
 Add a single attachment to a test context. This allows the user to able to pass any arbitrary data between the setup function, the test implementation, and the teardown function, allowing a continuous state to be maintained throughout the test fixture.
 
-#### Parameters
+#### PARAMETERS
 
 ##### *instance*
 The context of the test the attachment is being added to.
@@ -178,7 +178,7 @@ The context of the test the attachment is being added to.
 ##### *obj*
 Points to the data in which this attachment refers.
 
-#### Return Values
+#### RETURN VALUES
 
 ##### [wr_ERROK](#api-wr_ERROK)
 The attachment was successfully added to the given context.
@@ -192,12 +192,12 @@ An error occurred while attempting to allocate/reallocate memory for the attachm
 
 Calling this function will have the effect of causing the plan for the given suite to be written to output when it is run. Plans are always written before the first test result.
 
-#### Parameters
+#### PARAMETERS
 
 ##### *instance*
 The suite for which plan output will be enabled.
 
-#### Return Values
+#### RETURN VALUES
 
 ##### [wr_ERROK](#api-wr_ERROK)
 Plan print was successfully enabled for the given suite.
@@ -210,12 +210,12 @@ Set the directive for the given test context to [wr_DIRSKIP](#api-wr_DIRSKIP).
 
 Normally, this function would not be called directly by the user, but would be called by the [wr_SKIP](#api-wr_SKIP) macro.
 
-#### Parameters
+#### PARAMETERS
 
 ##### *instance*
 The test context for which the directive attribute will be updated.
 
-#### Return Values
+#### RETURN VALUES
 
 ##### [wr_ERROK](#api-wr_ERROK)
 The given test context’s directive attribute was successfully updated.
@@ -228,10 +228,12 @@ Set the directive attribute for the given test context to [wr_DIRTODO](#api-wr_D
 
 The preferred method of changing the directive attribute of a given test context is not to call this method directly, but rather to use the [wr_TODO](#api-wr_TODO) macro instead.
 
+#### PARAMETERS
+
 ##### *instance*
 The test context for which the directive attribute will be updated.
 
-#### Return Values
+#### RETURN VALUES
 
 ##### [wr_ERROK](#api-wr_ERROK)
 The given test context’s directive attribute was successfully updated.
@@ -244,7 +246,7 @@ Convert an error code into a string which describes the meaning of the code.
 
 > NOTE: The memory for the return data is allocated using *malloc* and must be freed by the user!
 
-#### Parameters
+#### PARAMETERS
 
 ##### *code*
 The error code which is being converted.
@@ -252,12 +254,36 @@ The error code which is being converted.
 ##### *ret*
 Pointer to the return data.
 
-#### Return Values
+#### RETURN VALUES
 
 ##### [wr_ERROK](#api-wr_ERROK)
 The description of the given error code was successfully written to *ret*.
 
 ##### [wr_ERRMEM](#api-wr_ERRMEM)
 An error occurred while attempting to allocate memory for the return data.
+
+---
+
+### [wr_ErrorCode](#api-wr_ErrorCode) wr_getattach([wr_TestContext](#api-TestContext) instance, int index, void \*\*ret) {#api-getattach}
+
+Fetch an attachment from a given test context.
+
+> HINT: Use [wr_getattachct()](#api-wr_getattachct) to determine the upper limit for values that may be passed to *index*.
+
+#### PARAMETERS
+
+##### *instance*
+The test context from which the attachment is being fetched.
+
+##### *index*
+The index of the attachment being fetched.
+
+##### *ret*
+Pointer to the return data.
+
+#### RETURN VALUES
+
+##### [wr_ERROK](#api-wr_ERROK)
+The attachment was successfully fetched.
 
 ---
