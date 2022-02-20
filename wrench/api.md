@@ -17,6 +17,7 @@ title: wrench - API Reference
 
 - [wr_attach](#api-wr_attach)
 - [wr_enableplan](#api-wr_enableplan)
+- [wr_enableskip](#api-wr_enableskip)
 
 ---
 
@@ -116,7 +117,7 @@ The suite was bailed out of before it could complete.
 
 ---
 
-### wr_ErrorCode *wr_attach*([wr_TestContext](#api-wr_TestContext) instance, void \*obj) {#api-wr_attach}
+### [wr_ErrorCode](#api-wr_ErrorCode) *wr_attach*([wr_TestContext](#api-wr_TestContext) instance, void \*obj) {#api-wr_attach}
 
 Add a single attachment to a test context. This allows the user to able to pass any arbitrary data between the setup function, the test implementation, and the teardown function, allowing a continuous state to be maintained throughout the test fixture.
 
@@ -138,7 +139,7 @@ An error occurred while attempting to allocate/reallocate memory for the attachm
 
 ---
 
-### wr_ErrorCode *wr_enableplan*([wr_Suite](#api-wr_Suite) instance) {#api-wr_enableplan}
+### [wr_ErrorCode](#api-wr_ErrorCode) *wr_enableplan*([wr_Suite](#api-wr_Suite) instance) {#api-wr_enableplan}
 
 Calling this function will have the effect of causing the plan for the given suite to be written to output when it is run. Plans are always written before the first test result.
 
@@ -154,3 +155,20 @@ Plan print was successfully enabled for the given suite.
 
 ---
 
+### [wr_ErrorCode](#api-wr_ErrorCode) *wr_enableskip*([wr_TestContext](#api-wr_TestContext) instance) {#api-wr_enableskip}
+
+Set the directive for the given test context to [wr_DIRSKIP](#api-wr_DIRSKIP).
+
+Normally, this function would not be called directly by the user, but would be called by the [wr_SKIP](#api-wr_SKIP) macro.
+
+#### Parameters
+
+##### *instance*
+The test context for which the directive attribute will be updated.
+
+#### Return Values
+
+##### [wr_ERROK](#api-wr_ERROK)
+The given test context’s directive attribute was successfully updated.
+
+---
