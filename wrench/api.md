@@ -228,4 +228,36 @@ Set the directive attribute for the given test context to [wr_DIRTODO](#api-wr_D
 
 The preferred method of changing the directive attribute of a given test context is not to call this method directly, but rather to use the [wr_TODO](#api-wr_TODO) macro instead.
 
+##### *instance*
+The test context for which the directive attribute will be updated.
+
+#### Return Values
+
+##### [wr_ERROK](#api-wr_ERROK)
+The given test context’s directive attribute was successfully updated.
+
+---
+
+### [wr_ErrorCode](#api-wr_ErrorCode) wr_errtostr([wr_ErrorCode](#api-wr_ErrorCode) code, char \*\*ret) {#api-wr_errtostr}
+
+Convert an error code into a string which describes the meaning of the code.
+
+> NOTE: The memory for the return data is allocated using *malloc* and must be freed by the user!
+
+#### Parameters
+
+##### *code*
+The error code which is being converted.
+
+##### *ret*
+Pointer to the return data.
+
+#### Return Values
+
+##### [wr_ERROK](#api-wr_ERROK)
+The description of the given error code was successfully written to *ret*.
+
+##### [wr_ERRMEM](#api-wr_ERRMEM)
+An error occurred while attempting to allocate memory for the return data.
+
 ---
