@@ -1,14 +1,112 @@
 ---
-title: /work_history
+title: /my_resume
 ---
 
-# Work History
+# My Resume
+
+## Contents
+
+- [Contact Information](#section-contact)
+- [Skills](#section-skills)
+- [Work History](#section-work)
+- [Education History](#section-edu)
+- [References](#section-references)
 
 ---
 
-## Software Development Jobs
+## Contact Information {#section-contact}
 
-These are all of the jobs that I have had that directly involved software development:
+### Name
+Kristoffer A. Wright
+
+### Mailing Address
+61064 Springcrest Dr., Bend, OR 97702
+
+### Phone Number
+(541)420-0499
+
+### Email Address
+[kris.al.wright@gmail.com](mailto:kris.al.wright@gmail.com)
+
+### Website
+[https://kriswrightdev.com](https://github.com/kawright)
+
+### Linkedin Profile
+[https://www.linkedin.com/in/kawright1989/](https://www.linkedin.com/in/kawright1989/)
+
+### GitHub Profile
+[https://github.com/kawright](https://github.com/kawright)
+
+---
+
+## Skills {#section-skills}
+
+### Programming Languages
+
+- Python
+- JavaScript
+- C
+- SQL
+- HTML
+- CSS
+- Java
+- VisualBasic
+- Markdown
+- reStructuredText
+- LaTeX
+
+### Web Development Skills
+
+- RESTful API Development
+- RESTful API Consumption
+- OAuth Consumption
+- SOAP Consumption
+- Frontend Development (HTML+JavaScript)
+- Slack App Development
+
+### Python Web Frameworks
+
+- Bottle
+- Flask
+
+### Linux Tools
+
+- Shell Script (bash)
+- vim
+- git
+- ssh
+- crontab
+- systemd
+- grep
+
+### Databases
+
+- MSSQL
+- MySQL
+- MongoDB
+- SQLite
+
+### Data Serialization Formats
+
+- JSON
+- XML
+- YAML
+
+### Documentation Tools
+
+- Open API Specification
+- Sphinx
+- MediaWiki
+
+### Data Validation
+
+- JSON Schema
+- Regular Expressions
+
+---
+
+
+## Work History {#section-work}
 
 ---
 
@@ -37,3 +135,33 @@ Evan Kisbey, Senior NetOps Engineer
 - Handle all project management tasks for projects pertaining directly to the DevOps department, beginning from the creation of the first design proposal, and extending throughout the support stage of the project's lifecycle. This may involve working with members of other departments.
 - Design, implement, test, document, deploy, and support all projects based on the agreed upon milestones.
 - Provide articles for procedures, tutorials, manuals, and general information to the internal company wiki.
+
+---
+
+## Education History {#section-edu}
+
+---
+
+### University of Arizona
+
+#### Years Attended
+2010-2011; 2017-2018
+
+#### Major
+Computer Science
+
+---
+
+### Pima Community College
+
+#### Years Attended
+2009-2010
+
+#### Major
+Computer Science
+
+---
+
+## References {#section-references}
+
+A list of references may be furnished upon request.

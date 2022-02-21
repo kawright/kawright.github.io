@@ -5,24 +5,15 @@ title: /kriswrightdev.com
 
 # Hello! I'm Kristoffer, and Welcome to my Website!
 
-Howdy, my name is Kristoffer A. Wright, and I am a software engineer who now
-has his own blog! I've got four years of professional experience as a DevOps
-engineer developing REST APIs and administering automated service integrations,
-and I am ready to share my programming endeavours with the rest of the world!
+Hi! My name is Kristoffer A. Wright, and I am a software engineer with a blog!
 
-Although this page is a great place to read about all of the projects I am 
-working on and all of the great things I am learning about every day, its also
-a wonderful place to read about my resume, including my contact info, my social
-media accounts, my education and work history, and even a little bit about my
-hobbies, including oil painting, drumming, and cooking.
+This page is a place where you can read all about my [professional career](#resume), my [open source projects](#projects), or read blog posts about software development and other various hobbies such as drumming, cooking, and oil painting.
 
 ---
 
 ## Page Contents
 
-- [Contact Information](contact)
-- [Work History](work)
-- [Education History](edu)
+- [My Resume](resume)
 - [My Projects](projects)
 
 ---

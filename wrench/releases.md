@@ -4,13 +4,17 @@ title: wrench - Releases
 
 # wrench Releases
 
+## Page Contents
+
+- [v0.1.0 (20 February 2022)](#v0_1_0)
+
 ---
 
 ## Pre-Release (0.x.y) Versions
 
 ---
 
-### v0.1.0 (20 February 2022)
+### v0.1.0 (20 February 2022) {#v0_1_0}
 
 #### RELEASE NOTES
 
