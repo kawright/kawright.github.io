@@ -13,8 +13,9 @@ title: /my_resume
 - [References](#section-references)
 
 ---
-
 ## Contact Information {#section-contact}
+
+---
 
 ### Name
 Kristoffer A. Wright
@@ -29,7 +30,7 @@ Kristoffer A. Wright
 [kris.al.wright@gmail.com](mailto:kris.al.wright@gmail.com)
 
 ### Website
-[https://kriswrightdev.com](https://github.com/kawright)
+[https://kriswrightdev.com](https://kriswrightdev.com)
 
 ### Linkedin Profile
 [https://www.linkedin.com/in/kawright1989/](https://www.linkedin.com/in/kawright1989/)
@@ -38,8 +39,9 @@ Kristoffer A. Wright
 [https://github.com/kawright](https://github.com/kawright)
 
 ---
-
 ## Skills {#section-skills}
+
+---
 
 ### Programming Languages
 
@@ -104,8 +106,6 @@ Kristoffer A. Wright
 - Regular Expressions
 
 ---
-
-
 ## Work History {#section-work}
 
 ---
@@ -137,7 +137,6 @@ Evan Kisbey, Senior NetOps Engineer
 - Provide articles for procedures, tutorials, manuals, and general information to the internal company wiki.
 
 ---
-
 ## Education History {#section-edu}
 
 ---
@@ -161,7 +160,8 @@ Computer Science
 Computer Science
 
 ---
-
 ## References {#section-references}
+
+---
 
 A list of references may be furnished upon request.

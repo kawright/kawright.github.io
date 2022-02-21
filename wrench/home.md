@@ -21,6 +21,9 @@ Page Contents
 
 - [API Reference](api)
 - [Releases](releases)
-- [Changelog](changelog)
-- [TODO](todo)
+- [GitHub Page (external page)](https://github.com/kawright/libwrench)
+- [GitHub Issues (external page)](https://github.com/kawright/libwrench/issues)
+- [GitHub Projects (external page)](https://github.com/kawright/libwrench/projects?type=beta)
 - [License](license)
+
+Check out the source code for *wrench* [here!](https://github.com/kawright/libwrench)
